@@ -1,0 +1,23 @@
+<?php?>
+<div id="nav">
+    <div id="container">
+        <ol>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#schools">Schools</a>
+            <a href="#majors">Majors</a>
+            <a href="#appointments">Set An Appointment</a>
+            <a href="#contact">Contact</a>
+        </ol>
+    </div>
+    <!--End of Container-->
+    <div id="container">
+        <ol>
+            <a href="#login">Login</a>
+            <a href="#create">Create an Account</a>
+        </ol>
+    </div>
+    <!--End of Container-->
+
+</div>
+<!--End of Nav-->

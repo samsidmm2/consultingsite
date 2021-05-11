@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment Page</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="C:/Users/sykes/Documents/Personal Projects/Consulting Website/css/style.css">
+    <link rel="stylesheet" href="C:/Users/sykes/Documents/Personal Projects/Consulting Website/css/jquery-ui.css">
+    <link rel="stylesheet" href="C:/Users/sykes/Documents/Personal Projects/Consulting Website/css/jquery-ui.min.css">
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.js"></script>
+
+
+</head>
+<!--End of Head-->
+<h1>Student STEM Consultant</h1>
+<div id="nav">
+    <div id="container">
+        <ol>
+            <a href="index.html">Home</a>
+            <a href="#about">About</a>
+            <a href="#schools">Schools</a>
+            <a href="#majors">Majors</a>
+            <a href="appointment.html">Set An Appointment</a>
+            <a href="#contact">Contact</a>
+        </ol>
+    </div>
+    <!--End of Container-->
+    <div id="container">
+        <ol>
+            <a href="login.html">Login/Signup</a>
+
+        </ol>
+    </div>
+    <!--End of Container-->
+
+</div>
+<!--End of Nav-->
+
+<body>
+
+
+    <div id="content">
+        <div class="container">
+            <form action="">
+                <div class="row">
+                    <div class="col">
+                        <label for="firstname">First Name</label>
+                        <input type="text" class="form-control" placeholder="First name">
+                    </div>
+                    <div class="col">
+                        <label for="lastname">Last Name</label>
+                        <input type="text" class="form-control" placeholder="Last name">
+                    </div>
+                    <div>
+                        <div class="col">
+                            <label for="email">Professional Email</label>
+                            <input type="email" class="form-control" placeholder="Email">
+                        </div>
+                        <div class="col">
+
+                            <label for="email">School Email</label>
+                            <input type="email" class="form-control" placeholder="Email ending in .edu"
+                                pattern=".+.edu">
+                        </div>
+                        <br>
+
+                    </div>
+
+                    <div class="form-check">
+
+                        <label for="reason">Choose Which Subject Area That You Require
+                            Consulting</label><br>
+                        <input type="radio" id="biochemistry" name="subject" class="form-check-input"><label
+                            for="biochemistry" class="form-check-label">Biochemistry</label><br>
+                        <input type="radio" id="biology" name="subject" class="form-check-input"><label for="biology"
+                            class="form-check-label">Biology or Biological
+                            Science</label><br>
+                        <input type="radio" id="biomedical" name="subject" class="form-check-input"><label
+                            for="biomedical" class="form-check-label">Biomedical
+                            Science</label><br>
+
+                        <input type="radio" id="computer" name="subject" class="form-check-input"><label for="computer"
+                            class="form-check-label">Computer
+                            Science</label><br>
+
+                        <input type="radio" id="engineering" name="subject" class="form-check-input"><label
+                            for="engineering" class="form-check-label">Engineering
+                            (Biological, Biomedical, Chemistry, Civil, Computer, Construction, Electrical, Mechanical,
+                            Petroleum,
+                            Software)</label><br>
+                        <input type="radio" id="chemistry" name="subject" class="form-check-input"><label
+                            for="chemistry" class="form-check-label">Chemistry</label><br>
+                        <input type="radio" id="infotech" name="subject" class="form-check-input"><label for="infotech"
+                            class="form-check-label">Information
+                            Technology</label><br>
+                        <input type="radio" id="math" name="subject" class="form-check-input"><label for="math"
+                            class="form-check-label">Mathematics</label><br>
+                        <input type="radio" id="physics" name="subject" class="form-check-input"><label for="physics"
+                            class="form-check-label">Physics</label><br>
+                        <br>
+                    </div>
+
+                    <label for="timeanddate">Set a Date and Time for Appointment</label>
+                    <input type="date" id="txtDate" min="min" max="max">
+                    <input id="time" type="text">
+
+                </div>
+                <input type="submit" class=" btn btn-primary padding-top">
+            </form>
+
+        </div>
+        <!--End of Container-->
+    </div>
+    <!--End of Content-->
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+    <script href="C:/Users/sykes/Documents/Personal Projects/Consulting Website/js/jquery-3.6.0.min.js"></script>
+    <script href="C:/Users/sykes/Documents/Personal Projects/Consulting Website/js/jquery-3.6.0.js"></script>
+
+
+    <script src="C:/Users/sykes/Documents/Personal Projects/Consulting Website/js/jquery-ui.js"></script>
+    <!-- <script src="C:/Users/sykes/Documents/Personal Projects/Consulting Website/js/scripts.js"></script> -->
+    <!-- <script>
+
+        $(document).ready(function () {
+            $(function () {
+                var today = new Date();
+                var dd = today.getDate();
+                var mm = today.getMonth + 1;
+                var yyyy = today.getFullYear();
+
+                var minToday;
+
+                if (dd < 10) {
+                    dd = '0' + dd.toString();
+                }
+                if (mm < 10) {
+                    mm = '0' + mm.toString();
+                }
+                minToday = yyyy + '-' + mm + '-' + dd;
+
+
+                $('#txtDate').attr('min', minToday);
+            });
+
+        })
+    </script> -->
+
+    <script type="text/javascript"
+        src="C:/Users/sykes/Documents/Personal Projects/Consulting Website/js/custom.js"></script>
+
+
+
+</body>
+<!--End of Body-->
+
+</html>

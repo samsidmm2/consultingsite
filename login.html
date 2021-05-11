@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="C:/Users/sykes/Documents/Personal Projects/Consulting Website/css/style.css">
+    <link rel="stylesheet" href="C:/Users/sykes/Documents/Personal Projects/Consulting Website/css/style2.css">
+
+</head>
+<!--End of Head-->
+<h1>Student STEM Consultant</h1>
+<div id="nav">
+    <div id="container">
+        <ol>
+            <a href="index.html">Home</a>
+            <a href="#about">About</a>
+            <a href="#schools">Schools</a>
+            <a href="#majors">Majors</a>
+            <a href="appointment.html">Set An Appointment</a>
+            <a href="#contact">Contact</a>
+        </ol>
+    </div>
+    <!--End of Container-->
+    <div id="container">
+        <ol>
+            <a href="login.html">Login/Signup</a>
+
+        </ol>
+    </div>
+    <!--End of Container-->
+
+</div>
+<!--End of Nav-->
+
+<body>
+
+    <div id="content">
+        <div class="container">
+
+            <div id="firstheading">
+                <h1>Login</h1>
+            </div>
+
+            <div class="form-login">
+                <form action="profile.html" method="POST" class="form" id="form" onsubmit="return validate();">
+
+                    <div class="col">
+                        <label for="email">Email</label>
+                        <input type="email" for="proEmail" id="proEmail1" class="form-control"
+                            placeholder="Professional Email">
+                        <div class="error_msg" id="pemail_err_msg">
+
+                        </div>
+                    </div>
+                    <div class="col">
+                        <label for="password">Password</label>
+                        <input type="password" for="password" id="passwordLogin" class="form-control"
+                            placeholder="Password">
+                        <div class="error_msg" id="pw_err_msg">
+
+                        </div>
+                        <br>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary btn-block">Log in</button>
+                    </div>
+                    <p class="form__text">
+                        <a href="#" class="form__link">Forgot your password?</a>
+                    </p>
+                    <p class="form__text">
+                        <a id="linkCreateAccount"
+                            href="file:///C:/Users/sykes/Documents/Personal%20Projects/Consulting%20Website/Signup.html"
+                            class="linkLogin">Create An Account</a>
+                    </p>
+                </form>
+            </div>
+        </div>
+        <!--End of Container-->
+
+    </div>
+    <!--End of Content-->
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+    <script src="C:/Users/sykes/Documents/Personal Projects/Consulting Website/js/scripts.js"></script>
+    <script src="C:/Users/sykes/Documents/Personal Projects/Consulting Website/js/scripts1.js"></script>
+
+</body>
+<!--End of Body-->
+
+</html>

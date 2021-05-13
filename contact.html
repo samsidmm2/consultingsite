@@ -10,6 +10,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="stylesheet" href="C:/Users/sykes/Documents/Personal Projects/Consulting Website/css/style.css">
+    <link rel="stylesheet" href="C:/Users/sykes/Documents/Personal Projects/Consulting Website/css/contactstyle.css">
+
     <link rel="stylesheet" href="C:/Users/sykes/Documents/Personal Projects/Consulting Website/css/jquery-ui.css">
     <link rel="stylesheet" href="C:/Users/sykes/Documents/Personal Projects/Consulting Website/css/jquery-ui.min.css">
     <script src="https://smtpjs.com/v3/smtp.js"></script>
@@ -44,25 +46,37 @@
 
     <div id="content">
         <div class="container">
-            <form method="POST">
+            <form method="POST" class="form" id="form" onsubmit="return validateContact();">
                 <div class="row">
                     <div class="col">
                         <label for="firstname">First Name</label>
-                        <input type="text" class="form-control" placeholder="First name">
+                        <input type="text" class="form-control" placeholder="First name" id="firststname">
+                        <div class="error_msg" id="fname_err_msg">
+
+                        </div>
                     </div>
                     <div class="col">
                         <label for="lastname">Last Name</label>
-                        <input type="text" class="form-control" placeholder="Last name">
+                        <input type="text" class="form-control" placeholder="Last name" id="lastname">
+                        <div class="error_msg" id="lname_err_msg">
+
+                        </div>
                     </div>
                     <div>
                         <div class="col">
                             <label for="email">Email</label>
-                            <input type="email" class="form-control" placeholder="Email">
+                            <input type="email" class="form-control" placeholder="Email" id="email">
+                            <div class="error_msg" id="email_err_msg">
+
+                            </div>
                         </div>
                         <div class="col">
 
                             <label for="message">Message</label>
-                            <input type="text" class="form-control" placeholder="Type your message">
+                            <input type="text" class="form-control" placeholder="Type your message" id="message">
+                            <div class="error_msg" id="msg_err_msg">
+
+                            </div>
                         </div>
                         <br>
 
